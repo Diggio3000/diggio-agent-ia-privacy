@@ -154,7 +154,7 @@
 
   <div class="container">
 
-    <div class="update-badge">Ultimo aggiornamento: 16 aprile 2026</div>
+    <div class="update-badge">Ultimo aggiornamento: 13 luglio 2026</div>
 
     <h2>1. Informazioni generali</h2>
     <p>
@@ -166,13 +166,14 @@
     <h2>2. Dati raccolti e archiviazione</h2>
     <p>L'Estensione archivia localmente sul dispositivo dell'utente le seguenti informazioni:</p>
     <ul>
-      <li>API Key del provider AI scelto (OpenAI, Anthropic, Groq, OpenRouter, Perplexity, Ollama o endpoint custom)</li>
+      <li>API Key del provider AI scelto (OpenAI, Anthropic, Groq, OpenRouter, Perplexity, Ollama, Ollama.com, LM Studio o endpoint custom)</li>
       <li>Endpoint API e nome del provider selezionato</li>
       <li>Modello AI selezionato</li>
       <li>Cronologia delle sessioni di chat</li>
       <li>Template di task salvati dall'utente</li>
       <li>Automazioni programmate create dall'utente</li>
       <li>Dati del Form Filler inseriti dall'utente</li>
+      <li>Note apprese sui siti visitati (memoria siti): appunti tecnici su come interagire con ciascun dominio (es. selettori, pattern URL), senza dati personali</li>
     </ul>
     <div class="highlight">
       Tutti i dati sono archiviati esclusivamente tramite le API di Chrome
@@ -189,9 +190,13 @@
     <p>Le comunicazioni con i provider AI includono:</p>
     <ul>
       <li>Il testo dei task inseriti dall'utente</li>
-      <li>Il contenuto delle pagine web visitate durante l'esecuzione dei task</li>
+      <li>Il contenuto delle pagine web visitate durante l'esecuzione dei task, inclusi screenshot e — quando richiesto dal task — informazioni tecniche della pagina come messaggi della console e richieste di rete</li>
       <li>Eventuali immagini allegate dall'utente</li>
     </ul>
+    <p>
+      Se l'utente usa un provider AI locale (Ollama o LM Studio installati sul proprio computer),
+      questi dati non lasciano il dispositivo dell'utente.
+    </p>
     <p>
       Queste trasmissioni avvengono direttamente tra il browser dell'utente e il provider AI scelto,
       nel rispetto delle rispettive Privacy Policy dei provider.
@@ -210,6 +215,10 @@
         <tr>
           <td>tabs</td>
           <td>Leggere e gestire le schede del browser per selezionare la scheda target dell'agente</td>
+        </tr>
+        <tr>
+          <td>tabGroups</td>
+          <td>Raggruppare in un gruppo Chrome colorato la scheda controllata dall'agente e le schede dei risultati, così l'utente vede su quali schede l'agente sta lavorando</td>
         </tr>
         <tr>
           <td>scripting</td>
