@@ -1,291 +1,33 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Diggio Agent IA</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #0f0f1a;
-      color: #e2e8f0;
-      line-height: 1.7;
-      font-size: 15px;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
-      padding: 60px 24px 48px;
-      text-align: center;
-    }
-    .hero-icon { font-size: 48px; margin-bottom: 16px; }
-    .hero h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
-    .hero p { color: rgba(255,255,255,0.8); font-size: 1rem; }
-
-    .container {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    .update-badge {
-      display: inline-block;
-      background: rgba(99,102,241,0.15);
-      border: 1px solid rgba(99,102,241,0.3);
-      color: #a5b4fc;
-      font-size: 12px;
-      padding: 4px 12px;
-      border-radius: 999px;
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #f1f5f9;
-      margin: 40px 0 12px;
-      padding-left: 12px;
-      border-left: 3px solid #6366f1;
-    }
-
-    p { color: #cbd5e1; margin-bottom: 12px; }
-
-    ul {
-      list-style: none;
-      margin: 8px 0 16px 0;
-    }
-    ul li {
-      color: #cbd5e1;
-      padding: 5px 0 5px 20px;
-      position: relative;
-    }
-    ul li::before {
-      content: '▸';
-      position: absolute;
-      left: 0;
-      color: #6366f1;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 16px 0;
-      font-size: 14px;
-    }
-    th {
-      background: rgba(99,102,241,0.15);
-      color: #a5b4fc;
-      text-align: left;
-      padding: 10px 14px;
-      font-weight: 600;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    td {
-      padding: 10px 14px;
-      color: #cbd5e1;
-      border-bottom: 1px solid #1e1e2e;
-    }
-    tr:last-child td { border-bottom: none; }
-    td:first-child {
-      color: #a5b4fc;
-      font-family: monospace;
-      font-size: 13px;
-      white-space: nowrap;
-    }
-    tbody tr:hover td { background: rgba(255,255,255,0.02); }
-
-    .highlight {
-      background: rgba(99,102,241,0.08);
-      border: 1px solid rgba(99,102,241,0.2);
-      border-radius: 10px;
-      padding: 16px 20px;
-      margin: 16px 0;
-      color: #a5b4fc;
-      font-size: 14px;
-    }
-
-    .contact-card {
-      background: #18181b;
-      border: 1px solid #27272a;
-      border-radius: 12px;
-      padding: 24px;
-      margin-top: 12px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-    .contact-avatar {
-      width: 48px; height: 48px;
-      background: linear-gradient(135deg, #6366f1, #ec4899);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 20px; flex-shrink: 0;
-    }
-    .contact-name { font-weight: 700; color: #f1f5f9; font-size: 1rem; }
-    .contact-alias { color: #a1a1aa; font-size: 13px; margin-bottom: 6px; }
-    .contact-email {
-      color: #818cf8;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    .contact-email:hover { color: #a5b4fc; text-decoration: underline; }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      border-top: 1px solid #1e1e2e;
-      color: #52525b;
-      font-size: 13px;
-    }
-    footer a { color: #6366f1; text-decoration: none; }
-  </style>
-</head>
-<body>
-
-  <div class="hero">
-    <div class="hero-icon">🤖</div>
-    <h1>Privacy Policy</h1>
-    <p>Diggio Agent IA — Estensione Chrome</p>
-  </div>
-
-  <div class="container">
-
-    <div class="update-badge">Ultimo aggiornamento: 13 luglio 2026</div>
-
-    <h2>1. Informazioni generali</h2>
-    <p>
-      Diggio Agent IA è un'estensione per Google Chrome sviluppata da
-      <strong>Antonio Di Giorgio</strong> (Diggio3000). Questa Privacy Policy descrive
-      come l'Estensione gestisce i dati dell'utente.
-    </p>
-
-    <h2>2. Dati raccolti e archiviazione</h2>
-    <p>L'Estensione archivia localmente sul dispositivo dell'utente le seguenti informazioni:</p>
-    <ul>
-      <li>API Key del provider AI scelto (OpenAI, Anthropic, Groq, OpenRouter, Perplexity, Ollama, Ollama.com, LM Studio o endpoint custom)</li>
-      <li>Endpoint API e nome del provider selezionato</li>
-      <li>Modello AI selezionato</li>
-      <li>Cronologia delle sessioni di chat</li>
-      <li>Template di task salvati dall'utente</li>
-      <li>Automazioni programmate create dall'utente</li>
-      <li>Dati del Form Filler inseriti dall'utente</li>
-      <li>Note apprese sui siti visitati (memoria siti): appunti tecnici su come interagire con ciascun dominio (es. selettori, pattern URL), senza dati personali</li>
-    </ul>
-    <div class="highlight">
-      Tutti i dati sono archiviati esclusivamente tramite le API di Chrome
-      (<code>chrome.storage.sync</code> e <code>chrome.storage.local</code>) e
-      <strong>non vengono mai trasmessi a server controllati dallo sviluppatore</strong>.
-    </div>
-
-    <h2>3. Trasmissione dei dati</h2>
-    <p>
-      L'Estensione invia dati esclusivamente agli endpoint API configurati dall'utente stesso
-      (es. api.openai.com, api.anthropic.com, api.groq.com, ecc.) per elaborare i task richiesti.
-      Lo sviluppatore non ha accesso a questi dati né li riceve.
-    </p>
-    <p>Le comunicazioni con i provider AI includono:</p>
-    <ul>
-      <li>Il testo dei task inseriti dall'utente</li>
-      <li>Il contenuto delle pagine web visitate durante l'esecuzione dei task, inclusi screenshot e — quando richiesto dal task — informazioni tecniche della pagina come messaggi della console e richieste di rete</li>
-      <li>Eventuali immagini allegate dall'utente</li>
-    </ul>
-    <p>
-      Se l'utente usa un provider AI locale (Ollama o LM Studio installati sul proprio computer),
-      questi dati non lasciano il dispositivo dell'utente.
-    </p>
-    <p>
-      Queste trasmissioni avvengono direttamente tra il browser dell'utente e il provider AI scelto,
-      nel rispetto delle rispettive Privacy Policy dei provider.
-    </p>
-
-    <h2>4. Permessi Chrome utilizzati</h2>
-    <table>
-      <thead>
-        <tr><th>Permesso</th><th>Motivo</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>debugger</td>
-          <td>Connessione al Chrome DevTools Protocol per navigare pagine, cliccare elementi, scattare screenshot e leggere il contenuto DOM — funzionalità core dell'agente AI</td>
-        </tr>
-        <tr>
-          <td>tabs</td>
-          <td>Leggere e gestire le schede del browser per selezionare la scheda target dell'agente</td>
-        </tr>
-        <tr>
-          <td>tabGroups</td>
-          <td>Raggruppare in un gruppo Chrome colorato la scheda controllata dall'agente e le schede dei risultati, così l'utente vede su quali schede l'agente sta lavorando</td>
-        </tr>
-        <tr>
-          <td>storage</td>
-          <td>Salvare impostazioni, cronologia e template localmente sul dispositivo</td>
-        </tr>
-        <tr>
-          <td>sidePanel</td>
-          <td>Mostrare il pannello laterale dell'estensione</td>
-        </tr>
-        <tr>
-          <td>alarms</td>
-          <td>Programmare l'esecuzione automatica dei task (automazioni) anche a pannello chiuso</td>
-        </tr>
-        <tr>
-          <td>notifications</td>
-          <td>Mostrare notifiche Chrome al completamento delle automazioni</td>
-        </tr>
-        <tr>
-          <td>&lt;all_urls&gt;</td>
-          <td>Consentire all'agente di navigare e interagire con qualsiasi sito web, come richiesto dai task dell'utente</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>5. Dati condivisi con terze parti</h2>
-    <p>
-      Lo sviluppatore <strong>non vende, non condivide e non trasmette</strong> alcun dato
-      dell'utente a terze parti. I dati inviati ai provider AI sono soggetti alle rispettive
-      Privacy Policy di quei servizi, con cui l'utente ha un rapporto diretto e indipendente.
-    </p>
-
-    <h2>6. Sicurezza</h2>
-    <p>
-      Le API Key sono archiviate tramite <code>chrome.storage.sync</code>, cifrato da Chrome
-      e sincronizzato in modo sicuro tra i dispositivi dell'utente tramite il suo account Google.
-      Lo sviluppatore non ha mai accesso a queste chiavi.
-    </p>
-
-    <h2>7. Minori</h2>
-    <p>
-      L'Estensione non è destinata a utenti di età inferiore ai 13 anni.
-      Lo sviluppatore non raccoglie consapevolmente dati personali di minori.
-    </p>
-
-    <h2>8. Modifiche a questa Privacy Policy</h2>
-    <p>
-      Eventuali aggiornamenti saranno pubblicati su questa pagina con la data di aggiornamento.
-      L'uso continuato dell'Estensione dopo le modifiche costituisce accettazione della nuova Policy.
-    </p>
-
-    <h2>9. Contatti</h2>
-    <div class="contact-card">
-      <div class="contact-avatar">👤</div>
-      <div>
-        <div class="contact-name">Antonio Di Giorgio</div>
-        <div class="contact-alias">— per tutti Diggio3000</div>
-        <a href="mailto:diggiotelefonia@gmail.com" class="contact-email">
-          📧 diggiotelefonia@gmail.com
-        </a>
-      </div>
-    </div>
-
-  </div>
-
-  <footer>
-    <p>Diggio Agent IA &nbsp;·&nbsp; Sviluppato da <a href="mailto:diggiotelefonia@gmail.com">Antonio Di Giorgio</a> &nbsp;·&nbsp; 2026</p>
-  </footer>
-
-</body>
-</html>
+<!doctype html><html lang="it"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy — Diggio Agent IA</title><style>body{margin:0;background:#f5f7fc;color:#182c43;font:16px/1.75 system-ui,sans-serif}main{max-width:820px;margin:0 auto;padding:48px 24px}h1{font-size:38px}h2{font-size:24px;margin-top:40px}a{color:#195bd4}footer{border-top:1px solid #ccd6e8;margin-top:40px;padding-top:20px}</style><main><h1>Privacy — Diggio Agent IA</h1>
+<p>Aggiornamento: 16 settembre 2026 · versione 2.2.0</p>
+<h2>Sviluppatore e scopo</h2>
+<p>Antonio Di Giorgio (Diggio3000) sviluppa questa estensione per conversare con un modello AI scelto dall’utente e svolgere attività nel browser. Contatto: diggiotelefonia@gmail.com · https://www.diggio3000.it.</p>
+<h2>Dati sul dispositivo</h2>
+<p>Lo storage locale dell’estensione conserva impostazioni, chiavi API, profili di connessione, conversazioni e allegati, preferenze, template, dati forniti per compilare form, note tecniche, procedure e automazioni. Lo stato dell’attività e l’ultima registrazione sono conservati anche nello storage di sessione. Le vecchie impostazioni in Chrome Sync vengono migrate nello storage locale e rimosse da Sync.</p>
+<p>Lo storage non è un gestore cifrato di segreti. Proteggi il dispositivo e il profilo Chrome. Le chiavi servono ad autenticare le richieste al servizio configurato; non salvarle nelle istruzioni, nelle preferenze o nelle procedure.</p>
+<h2>Richieste ai servizi</h2>
+<p>Messaggi, cronologia pertinente, allegati e osservazioni necessari al compito vengono inviati direttamente al provider AI scelto. Le osservazioni possono comprendere testo, link, screenshot, albero di accessibilità, contenuti dell’editor a fuoco, console e informazioni sulle richieste di rete della scheda. Possono contenere dati personali o riservati presenti nei materiali analizzati.</p>
+<p>Non è richiesto un server dello sviluppatore. Con un modello realmente eseguito sul dispositivo, le richieste AI restano locali; i siti visitati possono comunque comunicare con Internet. Un endpoint locale Ollama che inoltra richieste a un modello cloud invia invece i contenuti al servizio cloud. Ogni provider applica i propri termini, costi e criteri di conservazione: l’estensione non può cancellare dati già ricevuti da questi servizi.</p>
+<p>Documenti, Fogli e Presentazioni vengono utilizzati attraverso la sessione Google nel browser, senza integrazione OAuth/API Google. I contenuti osservati per il compito possono essere inviati al provider AI configurato, anche se diverso da Google. La normale attività sui siti comunica inoltre con i rispettivi gestori.</p>
+<h2>Insegnami e registrazione</h2>
+<p>La registrazione si attiva su richiesta nella scheda selezionata e mostra un avviso nella pagina. Raccoglie tipi di azione, etichette, selettori e percorsi di navigazione; non conserva i valori digitati o selezionati nei campi. Query e frammenti vengono rimossi dagli URL di navigazione registrati. Etichette, attributi, selettori e percorsi possono comunque contenere dati personali: la bozza deve essere controllata prima di salvarla.</p>
+<p>La registrazione riguarda il documento principale e lo Shadow DOM aperto, non gli eventi dentro gli iframe. Si ferma al cambio di origine, alla chiusura della scheda oppure al limite di 20 minuti o 100 passaggi. L’ultima registrazione resta nello storage di sessione per il recupero finché viene sostituita o la sessione termina. Le dimostrazioni hanno effetto reale sui siti.</p>
+<p>Le procedure si salvano solo con l’approvazione dell’utente, fino a 50, e sono eliminabili o modificabili dal pannello. Una procedura scelta per il riutilizzo viene inserita nella bozza della chat e inviata al modello quando l’utente invia il messaggio. Insegnami conserva istruzioni: non addestra i pesi del modello. Il trattamento successivo del provider resta regolato dalle sue condizioni.</p>
+<h2>Consumi</h2>
+<p>Il registro locale conserva conteggi e limiti ricevuti, data, modello, host e impronta della connessione; non contiene messaggi o chiavi API. Mostra fino a 30 giorni e 200 combinazioni di connessione e modello; la pulizia dei dati obsoleti avviene durante gli aggiornamenti del registro.</p>
+<p>L’aggiornamento esplicito della quota OpenRouter invia la chiave salvata soltanto all’API ufficiale OpenRouter. I link alle dashboard dei provider si aprono su richiesta. I conteggi locali e i limiti rilevati non sostituiscono il saldo del provider.</p>
+<h2>Controllo e conservazione</h2>
+<p>Chat e Insegnami in chat non controllano il browser. L’agente usa la scheda scelta; le automazioni usano schede dedicate. La modalità con approvazione consente di esaminare i comandi. Le azioni JavaScript e quelle sui domini riconosciuti come sensibili richiedono conferma anche in modalità automatica. Stop impedisce nuovi comandi ma non annulla azioni già eseguite.</p>
+<p>I campi riconosciuti come password o riservati vengono esclusi da alcune letture e protetti dall’inserimento automatico. Il mascheramento degli screenshot riguarda i campi identificabili nel documento principale e nello Shadow DOM aperto. Non garantisce la rimozione di ogni dato sensibile, specialmente in immagini, canvas e iframe. Valuta i contenuti prima di chiedere all’agente di osservarli.</p>
+<p>La cronologia conserva fino a 30 conversazioni entro un budget stimato di circa 6,5 MB; quando viene superato, vengono eliminate le più vecchie. Conversazioni, template, note, procedure e automazioni sono eliminabili dai rispettivi pannelli. Le chiavi si cancellano o sostituiscono nelle Impostazioni. Disinstallando si rimuove lo storage dal profilo; restano eventuali esportazioni, documenti creati sui siti e dati già inviati ai provider.</p>
+<h2>Permessi</h2>
+<p>- debugger: osservazione e controllo della scheda mediante Chrome DevTools Protocol.</p>
+<p>- scripting: individuazione degli elementi, verifica del focus, mascheramento dei campi e registrazione esplicitamente avviata.</p>
+<p>- tabs e tabGroups: selezione e organizzazione delle schede dell’attività.</p>
+<p>- sidePanel: interfaccia laterale.</p>
+<p>- storage: impostazioni e dati sul dispositivo.</p>
+<p>- alarms: attività programmate.</p>
+<p>- notifications: risultati, errori e richieste di intervento.</p>
+<p>- Accesso agli host: attività sui siti scelti e richieste agli endpoint configurati, compresi servizi locali e personalizzati.</p>
+<h2>Telemetria</h2>
+<p>Il codice dell’estensione non include telemetria, tracciamento analitico o vendita di dati da parte dello sviluppatore. I servizi configurati e i siti visitati applicano le loro politiche. Le modifiche a questa informativa vengono pubblicate con una nuova data di aggiornamento.</p><footer>Antonio Di Giorgio · <a href="https://www.diggio3000.it">www.diggio3000.it</a> · <a href="mailto:diggiotelefonia@gmail.com">Contatti</a></footer></main></html>

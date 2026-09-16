@@ -1,90 +1,58 @@
-# Privacy Policy — Diggio Agent IA
+# Privacy — Diggio Agent IA
 
-> Ultimo aggiornamento: 16 aprile 2026
+Aggiornamento: 16 settembre 2026 · versione 2.2.0
 
----
+## Sviluppatore e scopo
 
-## 1. Informazioni generali
+Antonio Di Giorgio (Diggio3000) sviluppa questa estensione per conversare con un modello AI scelto dall’utente e svolgere attività nel browser. Contatto: diggiotelefonia@gmail.com · https://www.diggio3000.it.
 
-Diggio Agent IA è un'estensione per Google Chrome sviluppata da **Antonio Di Giorgio** (Diggio3000). Questa Privacy Policy descrive come l'Estensione gestisce i dati dell'utente.
+## Dati sul dispositivo
 
----
+Lo storage locale dell’estensione conserva impostazioni, chiavi API, profili di connessione, conversazioni e allegati, preferenze, template, dati forniti per compilare form, note tecniche, procedure e automazioni. Lo stato dell’attività e l’ultima registrazione sono conservati anche nello storage di sessione. Le vecchie impostazioni in Chrome Sync vengono migrate nello storage locale e rimosse da Sync.
 
-## 2. Dati raccolti e archiviazione
+Lo storage non è un gestore cifrato di segreti. Proteggi il dispositivo e il profilo Chrome. Le chiavi servono ad autenticare le richieste al servizio configurato; non salvarle nelle istruzioni, nelle preferenze o nelle procedure.
 
-L'Estensione archivia localmente sul dispositivo dell'utente le seguenti informazioni:
+## Richieste ai servizi
 
-- API Key del provider AI scelto (OpenAI, Anthropic, Groq, OpenRouter, Perplexity, Ollama o endpoint custom)
-- Endpoint API e nome del provider selezionato
-- Modello AI selezionato
-- Cronologia delle sessioni di chat
-- Template di task salvati dall'utente
-- Automazioni programmate create dall'utente
-- Dati del Form Filler inseriti dall'utente
+Messaggi, cronologia pertinente, allegati e osservazioni necessari al compito vengono inviati direttamente al provider AI scelto. Le osservazioni possono comprendere testo, link, screenshot, albero di accessibilità, contenuti dell’editor a fuoco, console e informazioni sulle richieste di rete della scheda. Possono contenere dati personali o riservati presenti nei materiali analizzati.
 
-> **Tutti i dati sono archiviati esclusivamente tramite le API di Chrome (`chrome.storage.sync` e `chrome.storage.local`) e non vengono mai trasmessi a server controllati dallo sviluppatore.**
+Non è richiesto un server dello sviluppatore. Con un modello realmente eseguito sul dispositivo, le richieste AI restano locali; i siti visitati possono comunque comunicare con Internet. Un endpoint locale Ollama che inoltra richieste a un modello cloud invia invece i contenuti al servizio cloud. Ogni provider applica i propri termini, costi e criteri di conservazione: l’estensione non può cancellare dati già ricevuti da questi servizi.
 
----
+Documenti, Fogli e Presentazioni vengono utilizzati attraverso la sessione Google nel browser, senza integrazione OAuth/API Google. I contenuti osservati per il compito possono essere inviati al provider AI configurato, anche se diverso da Google. La normale attività sui siti comunica inoltre con i rispettivi gestori.
 
-## 3. Trasmissione dei dati
+## Insegnami e registrazione
 
-L'Estensione invia dati esclusivamente agli endpoint API configurati dall'utente stesso (es. `api.openai.com`, `api.anthropic.com`, `api.groq.com`, ecc.) per elaborare i task richiesti. Lo sviluppatore non ha accesso a questi dati né li riceve.
+La registrazione si attiva su richiesta nella scheda selezionata e mostra un avviso nella pagina. Raccoglie tipi di azione, etichette, selettori e percorsi di navigazione; non conserva i valori digitati o selezionati nei campi. Query e frammenti vengono rimossi dagli URL di navigazione registrati. Etichette, attributi, selettori e percorsi possono comunque contenere dati personali: la bozza deve essere controllata prima di salvarla.
 
-Le comunicazioni con i provider AI includono:
-- Il testo dei task inseriti dall'utente
-- Il contenuto delle pagine web visitate durante l'esecuzione dei task
-- Eventuali immagini allegate dall'utente
+La registrazione riguarda il documento principale e lo Shadow DOM aperto, non gli eventi dentro gli iframe. Si ferma al cambio di origine, alla chiusura della scheda oppure al limite di 20 minuti o 100 passaggi. L’ultima registrazione resta nello storage di sessione per il recupero finché viene sostituita o la sessione termina. Le dimostrazioni hanno effetto reale sui siti.
 
-Queste trasmissioni avvengono direttamente tra il browser dell'utente e il provider AI scelto, nel rispetto delle rispettive Privacy Policy dei provider.
+Le procedure si salvano solo con l’approvazione dell’utente, fino a 50, e sono eliminabili o modificabili dal pannello. Una procedura scelta per il riutilizzo viene inserita nella bozza della chat e inviata al modello quando l’utente invia il messaggio. Insegnami conserva istruzioni: non addestra i pesi del modello. Il trattamento successivo del provider resta regolato dalle sue condizioni.
 
----
+## Consumi
 
-## 4. Permessi Chrome utilizzati
+Il registro locale conserva conteggi e limiti ricevuti, data, modello, host e impronta della connessione; non contiene messaggi o chiavi API. Mostra fino a 30 giorni e 200 combinazioni di connessione e modello; la pulizia dei dati obsoleti avviene durante gli aggiornamenti del registro.
 
-| Permesso | Motivo |
-|----------|--------|
-| `debugger` | Connessione al Chrome DevTools Protocol per navigare pagine, cliccare elementi, scattare screenshot e leggere il contenuto DOM — funzionalità core dell'agente AI |
-| `tabs` | Leggere e gestire le schede del browser per selezionare la scheda target dell'agente |
-| `scripting` | Eseguire script nelle pagine per interagire con elementi e leggere contenuti |
-| `storage` | Salvare impostazioni, cronologia e template localmente sul dispositivo |
-| `sidePanel` | Mostrare il pannello laterale dell'estensione |
-| `activeTab` | Accedere alla scheda attiva corrente |
-| `alarms` | Programmare l'esecuzione automatica dei task (automazioni) anche a pannello chiuso |
-| `notifications` | Mostrare notifiche Chrome al completamento delle automazioni |
-| `<all_urls>` | Consentire all'agente di navigare e interagire con qualsiasi sito web, come richiesto dai task dell'utente |
+L’aggiornamento esplicito della quota OpenRouter invia la chiave salvata soltanto all’API ufficiale OpenRouter. I link alle dashboard dei provider si aprono su richiesta. I conteggi locali e i limiti rilevati non sostituiscono il saldo del provider.
 
----
+## Controllo e conservazione
 
-## 5. Dati condivisi con terze parti
+Chat e Insegnami in chat non controllano il browser. L’agente usa la scheda scelta; le automazioni usano schede dedicate. La modalità con approvazione consente di esaminare i comandi. Le azioni JavaScript e quelle sui domini riconosciuti come sensibili richiedono conferma anche in modalità automatica. Stop impedisce nuovi comandi ma non annulla azioni già eseguite.
 
-Lo sviluppatore **non vende, non condivide e non trasmette** alcun dato dell'utente a terze parti. I dati inviati ai provider AI sono soggetti alle rispettive Privacy Policy di quei servizi, con cui l'utente ha un rapporto diretto e indipendente.
+I campi riconosciuti come password o riservati vengono esclusi da alcune letture e protetti dall’inserimento automatico. Il mascheramento degli screenshot riguarda i campi identificabili nel documento principale e nello Shadow DOM aperto. Non garantisce la rimozione di ogni dato sensibile, specialmente in immagini, canvas e iframe. Valuta i contenuti prima di chiedere all’agente di osservarli.
 
----
+La cronologia conserva fino a 30 conversazioni entro un budget stimato di circa 6,5 MB; quando viene superato, vengono eliminate le più vecchie. Conversazioni, template, note, procedure e automazioni sono eliminabili dai rispettivi pannelli. Le chiavi si cancellano o sostituiscono nelle Impostazioni. Disinstallando si rimuove lo storage dal profilo; restano eventuali esportazioni, documenti creati sui siti e dati già inviati ai provider.
 
-## 6. Sicurezza
+## Permessi
 
-Le API Key sono archiviate tramite `chrome.storage.sync`, cifrato da Chrome e sincronizzato in modo sicuro tra i dispositivi dell'utente tramite il suo account Google. Lo sviluppatore non ha mai accesso a queste chiavi.
+- debugger: osservazione e controllo della scheda mediante Chrome DevTools Protocol.
+- scripting: individuazione degli elementi, verifica del focus, mascheramento dei campi e registrazione esplicitamente avviata.
+- tabs e tabGroups: selezione e organizzazione delle schede dell’attività.
+- sidePanel: interfaccia laterale.
+- storage: impostazioni e dati sul dispositivo.
+- alarms: attività programmate.
+- notifications: risultati, errori e richieste di intervento.
+- Accesso agli host: attività sui siti scelti e richieste agli endpoint configurati, compresi servizi locali e personalizzati.
 
----
+## Telemetria
 
-## 7. Minori
-
-L'Estensione non è destinata a utenti di età inferiore ai 13 anni. Lo sviluppatore non raccoglie consapevolmente dati personali di minori.
-
----
-
-## 8. Modifiche a questa Privacy Policy
-
-Eventuali aggiornamenti saranno pubblicati su questa pagina con la data di aggiornamento. L'uso continuato dell'Estensione dopo le modifiche costituisce accettazione della nuova Policy.
-
----
-
-## 9. Contatti
-
-**Antonio Di Giorgio** — per tutti Diggio3000
-
-📧 [diggiotelefonia@gmail.com](mailto:diggiotelefonia@gmail.com)
-
----
-
-*Diggio Agent IA · Sviluppato da Antonio Di Giorgio · 2026*
+Il codice dell’estensione non include telemetria, tracciamento analitico o vendita di dati da parte dello sviluppatore. I servizi configurati e i siti visitati applicano le loro politiche. Le modifiche a questa informativa vengono pubblicate con una nuova data di aggiornamento.
