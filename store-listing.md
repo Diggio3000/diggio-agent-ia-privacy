@@ -1,4 +1,8 @@
-# Chrome Web Store — Diggio Agent IA 2.2.1
+# Chrome Web Store — materiali Diggio Agent IA 2.2.5
+
+Lo stato effettivo dell’invio e della disponibilità pubblica è documentato in PUBBLICAZIONE.md.
+
+Novità 2.2.5: budget token e limite passaggi facoltativi, disattivati per impostazione predefinita; recupero delle schede, gestione delle risposte incomplete e lettura dello stato visibile di Google Fogli migliorati.
 
 ## Descrizione breve
 
@@ -9,7 +13,7 @@ Chat AI e agente browser con il tuo modello: procedure riutilizzabili, consumi e
 Diggio Agent IA ti aiuta a scrivere, leggere pagine e svolgere attività nel browser con il provider AI che scegli tu.
 
 QUATTRO MODI DI LAVORARE
-• Chat: ragiona, scrivi e analizza gli allegati.
+• Chat: ragiona, scrivi e analizza gli allegati, senza leggere o controllare il browser. Un avviso lo chiarisce prima dell’invio; Usa il browser permette di passare alla modalità Con approvazione.
 • Agente autonomo: esegue il compito sulla scheda selezionata; alcune azioni richiedono comunque conferma.
 • Con approvazione: esamina, modifica o salta i comandi prima dell’esecuzione.
 • Insegnami: descrivi una procedura o registra i tuoi clic, controlla la bozza e salvala per riutilizzarla. Si salvano istruzioni, senza addestrare i pesi del modello.
@@ -25,6 +29,8 @@ Registra una breve dimostrazione nella scheda scelta oppure costruisci una proce
 
 CONSUMI E ATTIVITÀ
 Consulta i token comunicati dai provider, i limiti disponibili e i collegamenti alle dashboard, anche per Ollama cloud. I dati mancanti sono indicati e i conteggi locali non sono il saldo dell’account. Programma attività con intervallo o giorni/orario, limite di esecuzioni e condizione di arresto. Chrome e il computer devono essere disponibili.
+
+Budget token e limite di passaggi sono facoltativi e disattivati per default. Puoi configurarli in Impostazioni → Memoria e limiti; campo vuoto o zero significa nessuna soglia locale. Restano Stop, timeout e gestione degli errori. Letture identiche ripetute provocano un cambio di strategia e, se persistono, una richiesta di indicazioni.
 
 INTERFACCIA E DATI
 Temi chiaro e scuro, piano di lavoro, cronologia riprendibile, preferenze e report esportabili. Impostazioni e chiavi restano nello storage locale dell’estensione, senza Chrome Sync. I contenuti necessari al compito sono inviati al provider scelto. Non è richiesto un server dello sviluppatore e il codice non include telemetria dello sviluppatore.
